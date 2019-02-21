@@ -15,7 +15,10 @@ class String
   end
 
   def count_sentences
-    #
+    count = 0
+    count += self.squeeze.count "."
+    count += self.squeeze.count "?"
+    count += self.squeeze.count "!"
   end
   
 end
